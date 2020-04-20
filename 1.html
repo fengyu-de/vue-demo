@@ -1,26 +1,31 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-	<title></title>
+	<title>git与vscode</title>
+	<link rel="stylesheet" href="index.css">
 </head>
+
 <body>
 	<button id="z">停止</button>
 	<button id="zz">开始</button>
+	<button>开始</button>
 </body>
 <script type="text/javascript">
-	var z=document.querySelectorAll("#z")[0]
-	var zz=document.querySelectorAll("#zz")[0]
-	var a=setInterval(function(){
+	var z = document.querySelectorAll("#z")[0]
+	var zz = document.querySelectorAll("#zz")[0]
+	var a = setInterval(function () {
 		console.log("212")
-	},1000)
-	zz.onclick=function(){
-		 a=setInterval(function(){
-		console.log("212")
-	},1000)
+	}, 1000)
+	zz.onclick = function () {
+		a = setInterval(function () {
+			console.log("212")
+		}, 1000)
 	}
-	z.onclick=function(){
+	z.onclick = function () {
 		clearInterval(a)
 	}
 </script>
+
 </html>
